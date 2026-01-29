@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fitness</title>
+  <link rel="stylesheet" href="الرئيسية.css">
+</head>
+
+<body>
+
+<div class="language-switcher">
+  <button onclick="window.location.href='الرئيسية.html'">Arabic</button>
+</div>
+
+<div class="news-bar">
+  <marquee behavior="scroll" direction="right">
+    New: Join Fadi's Summer Challenge! | New Video: Quick Home Workouts | Free Nutrition Plan for New Subscribers! | Fadi's 2025 Goals Now Available!
+  </marquee>
+</div>
+
+<div class="Sizes">
+  <label for="zoomSelect">Page Zoom Control:</label>
+
+  <select id="zoomSelect" onchange="changeZoom(this.value)">
+    <option value="100%">100% (Normal)</option>
+    <option value="80%">80%</option>
+    <option value="50%">50%</option>
+    <option value="120%">120%</option>
+    <option value="150%">150%</option>
+  </select>
+
+  <script> 
+    function changeZoom(value) {      
+      document.body.style.zoom = value;
+    }
+  </script>
+</div>
+
+<div class="container">
+  <video autoplay loop muted playsinline class="background-clip">
+     <source src="فيديوهات/00.mp4" type ="video/mp4"
+        height:100>
+        </video>
+        
+  <div class="content">
+    <h1>Fitness</h1>
+ 
+       <a href="اهداف اللياقه انجليزي.HTML">Fitness Goals</a> <!-- رابط للصفحة اهداف اللياقه -->
+       <a href="الطعام الصحي انجليزي.HTML">Healthy Food</a> <!-- رابط للطعام الصحي -->
+       <a href="برامج تمارين انجليزي.HTML">Workout Programs</a> <!-- رابط للتمارين -->
+       <a href="نصائح للياقه انجليزي.html">Fitness Tips</a><!-- رابط للنصائح -->
+       <a href="التسجيل.HTML">Login</a> <!-- رابط لتسجيل الدخول -->
+        <a href="تواصل انجليزي.html">Contact</a> <!-- رابط للتواصل -->
+      
+  </div>
+</div>
+
+<div class="about-box">
+  <h2>About Fadi</h2>
+  <p>Fadi is a health and fitness blogger and influencer. He started his fitness journey to improve his lifestyle and help others do the same. He shares his experiences, tips, workout plans, and nutrition advice with his followers on social media. He believes true change starts with a small step.
+
+Through this website, Fadi aims to provide organized and easy-to-follow content about workouts, nutrition, and real fitness goals he works on and updates regularly. His goal is to reach people who care about their health—whether beginners or experts—and give them one place to find everything useful.
+
+Follow Fadi and be part of his journey.</p>
+</div>
+
+<footer>
+  &copy; 2025 Fadi's Fitness Website - All rights reserved
+</footer>
+
+</body>
+</html>

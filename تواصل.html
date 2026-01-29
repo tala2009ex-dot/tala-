@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> communicate with you</title>
+  <link rel="stylesheet" href="التسجيل.css" />
+
+
+<div class="Sizes">
+ <!-- قائمة منسدلة بها خيارات لتكبير وتصغير الصفحة -->
+    <label for="zoomSelect">التحكم في تكبير الصفحة:</label><!--تسميه للثائمه-->
+
+
+<select id="zoomSelect" onchange="changeZoom(this.value)"><!--changeZoomلما تختار من القائمه  اينفذ ال-->
+  <option value="100%">100% (Normal)</option><!--بخلي طبيعي الشاشه-->
+  <option value="80%"> 80% </option><!--بكبر ثمنين بالميه-->
+  <option value="50%"> 50% </option><!--بكبر خمسين بالميه-->
+  <option value="120%">120% </option><!--بكبر اكثر-->   
+  <option value="150%">150% </option><!--بكبر اكثر اشي-->
+</select>
+
+<script> 
+  function changeZoom(value) {      
+    document.body.style.zoom = value;
+  } 
+</script>
+</div>
+
+</head>
+<body>
+  
+<DIV class="HOME">
+  
+  <a href="الرئيسية.HTML"_target="blank"> الرئيسيه </a>
+</DIV>
+
+<div class="language-switcher">
+  <button onclick="window.location.href='تواصل انجليزي.html'">English</button>
+</div>
+
+  <div class="wrapper">
+    <form action="">
+
+      <h1>كيف تريدنا نتواصل معك?</h1>
+
+      <div class="input-box">
+        <input type="text" placeholder="Your email" required /> 
+          </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password" required />
+      </div>
+
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">  ذكرني  </label>
+        <a href="#"> نسيت كلمه السر?</a>
+        
+      </div>
+       
+      <button type="submit" class="btn">تسجيل</button>
+     
+    </form>
+
+            <div class="links">
+        <a href="https://ar-ar.facebook.com/" > حساب فادي السناب </a> &emsp;
+        <a href="https://www.instagram.com/?hl=en"  >حساب فادي الانستقرام  </a>&emsp;
+        <a href="https://accounts.snapchat.com/accounts/v2/login" > حساب فادي الفيسبوك</a>&emsp;
+      </div>
+      
+
+
+  </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

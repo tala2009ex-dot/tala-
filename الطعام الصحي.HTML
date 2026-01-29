@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+  
+<div class="Sizes">
+ <!-- قائمة منسدلة بها خيارات لتكبير وتصغير الصفحة -->
+    <label for="zoomSelect">التحكم في تكبير الصفحة:</label><!--تسميه للثائمه-->
+
+
+<select id="zoomSelect" onchange="changeZoom(this.value)"><!--changeZoomلما تختار من القائمه  اينفذ ال-->
+  <option value="100%">100% (Normal)</option><!--بخلي طبيعي الشاشه-->
+  <option value="80%"> 80% </option><!--بكبر ثمنين بالميه-->
+  <option value="50%"> 50% </option><!--بكبر خمسين بالميه-->
+  <option value="120%">120% </option><!--بكبر اكثر-->   
+  <option value="150%">150% </option><!--بكبر اكثر اشي-->
+</select>
+
+<script> 
+  function changeZoom(value) {      
+    document.body.style.zoom = value;
+  } 
+</script>
+</div>  
+
+  <title>Healthy food </title>
+  <link rel="stylesheet" href="الطعام الصحي.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Dancing+Script&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  
+  <div class="overlay">
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+      <ul>
+       <li><a href="الرئيسية.HTML">الرئيسية</a></li>
+        <li><a href="اهداف اللياقه.HTML"> اهداف اللياقه</a></li>
+        <li><a href="برامج تمارين.HTML"> تمارين</a></li>
+        <li><a href="نصائح للياقه.html"> نصائح للياقه</a></li>
+        <li><a href="التسجيل.HTML"> تسجيل الدخول</a></li>
+      
+         <li><a href="تواصل.html">للتواصل </a></li>
+      </ul>
+    </nav>
+
+    <div class="language-switcher">
+  <button onclick="window.location.href='الطعام الصحي انجليزي.html'">English</button>
+</div>
+
+
+    <!-- العنوان الرئيسي -->
+    <header class="main-header">
+      <h1> الطعام الصحي </h1>
+      <p>دور الأكل في اللياقة البدنية</p>
+    </header>
+
+    <!-- قسم زيادة العضلات -->
+    <section class="section">
+      <h2>نظام غذائي لزيادة العضلات</h2>
+      <div class="box-container">
+        <div class="orange-box">
+          <h3>وجبة الإفطار</h3>
+          <p>تحتوي على البيض، خبز الحبوب الكاملة، وزبادي يوناني لبناء العضلات مبكرًا.</p>
+        </div>
+        <div class="orange-box">
+          <h3>وجبة الغداء</h3>
+          <p>صدر دجاج مشوي مع الأرز البني والخضار لتوفير البروتين والطاقة.</p>
+        </div>
+        <div class="orange-box">
+          <h3>وجبة العشاء</h3>
+          <p>تونة مع سلطة خضراء وبعض المكسرات لمساعدة الجسم على الاستشفاء الليلي.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم خسارة الوزن -->
+    <section class="section">
+      <h2>نظام غذائي لخسارة الوزن</h2>
+      <div class="box-container">
+        <div class="orange-box">
+          <h3>وجبة خفيفة</h3>
+          <p>تفاحة أو خيار مع كوب شاي أخضر لتقليل الجوع بدون سعرات عالية.</p>
+        </div>
+        <div class="orange-box">
+          <h3>غداء صحي</h3>
+          <p>صدر دجاج مشوي أو سمك مع سلطة خضراء غنية بالألياف.</p>
+        </div>
+        <div class="orange-box">
+          <h3>عشاء خفيف</h3>
+          <p>شوربة خضار أو زبادي خالي الدسم لتسهيل الهضم قبل النوم.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الوصفات الصحية -->
+    <section class="section">
+      <h2>وصفات صحية</h2>
+      <div class="box-container">
+        <div class="orange-box">
+          <h3>سلطة الكينوا</h3>
+          <p>كينوا مطبوخة مع خضار طازجة، زيت الزيتون، وعصير ليمون.</p>
+        </div>
+        <div class="orange-box">
+          <h3>شوربة العدس</h3>
+          <p>عدس، جزر، بصل، وتوابل دافئة، غنية بالبروتين والألياف.</p>
+        </div>
+        <div class="orange-box">
+          <h3>عصير الطاقة</h3>
+          <p>موز، سبانخ، تفاح، وحليب لوز – مشروب طاقة طبيعي وصحي.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</html>

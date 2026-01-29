@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Healthy Routine</title>
+  <link rel="stylesheet" href="نصائح للياقه.css" />
+
+  <div class="Sizes">
+    <!-- Dropdown list with options to zoom in/out the page -->
+    <label for="zoomSelect">Page Zoom Control:</label>
+
+    <select id="zoomSelect" onchange="changeZoom(this.value)">
+      <option value="100%">100% (Normal)</option>
+      <option value="80%">80%</option>
+      <option value="50%">50%</option>
+      <option value="120%">120%</option>
+      <option value="150%">150%</option>
+    </select>
+
+    <script>
+      function changeZoom(value) {
+        document.body.style.zoom = value;
+      }
+    </script>
+  </div>
+</head>
+
+<body>
+
+  <div class="language-switcher">
+    <button onclick="window.location.href='نصائح للياقه.html'">العربية</button>
+  </div>
+
+  <div class="overlay">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="الرئيسية.HTML">Home</a></li>
+        <li><a href="اهداف اللياقه.HTML">Fitness Goals</a></li>
+        <li><a href="برامج تمارين.HTML">Workouts</a></li>
+        <li><a href="التسجيل.HTML">Login</a></li>
+        <li><a href="تواصل.html">Contact</a></li>
+        <li><a href="الطعام الصحي.HTML">Healthy Food</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header>
+    <h1>My Healthy Routine</h1>
+    <p>Your guide to a balanced and healthy life every day</p>
+  </header>
+
+  <main>
+    <section id="tips">
+      <h2>Healthy Routine Tips</h2>
+      <ul>
+        <li>Start with realistic and achievable goals.</li>
+        <li>Choose habits that fit your daily schedule.</li>
+        <li>Enhance your environment with healthy tools.</li>
+        <li>Seek support from friends or family.</li>
+        <li>Track your progress and reward yourself.</li>
+      </ul>
+    </section>
+
+    <section id="injury">
+      <h2>Prevent Injuries During Workouts</h2>
+      <ul>
+        <li>Begin with a 5-10 minute warm-up.</li>
+        <li>Practice exercises gradually.</li>
+        <li>Maintain correct body posture.</li>
+        <li>Rest when feeling overly tired.</li>
+        <li>Use suitable sports clothes and shoes.</li>
+      </ul>
+    </section>
+
+    <section id="nutrition">
+      <h2>Nutrition Tips</h2>
+      <ul>
+        <li>Eat vegetables and fruits daily.</li>
+        <li>Drink at least 8 cups of water.</li>
+        <li>Reduce sugar and fast food.</li>
+        <li>Have a protein-rich breakfast.</li>
+        <li>Balance carbohydrates and healthy fats.</li>
+      </ul>
+    </section>
+
+    <section id="sleep">
+      <h2>The Importance of Good Sleep</h2>
+      <ul>
+        <li>Sleep 7 to 9 hours daily.</li>
+        <li>Keep regular sleep and wake times.</li>
+        <li>Avoid electronic devices one hour before bed.</li>
+        <li>Create a quiet and dark sleeping environment.</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h2>Suggested Daily Schedule for a Healthy Routine</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6:30 AM</td>
+            <td>Wake up - Drink a glass of water</td>
+          </tr>
+          <tr>
+            <td>7:00 AM</td>
+            <td>Light exercises (walking or yoga)</td>
+          </tr>
+          <tr>
+            <td>7:30 AM</td>
+            <td>Healthy breakfast</td>
+          </tr>
+          <tr>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>Work or study</td>
+          </tr>
+          <tr>
+            <td>1:30 PM</td>
+            <td>Balanced lunch</td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td>Break or short nap</td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td>Workout session</td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td>Light dinner</td>
+          </tr>
+          <tr>
+            <td>9:00 PM</td>
+            <td>Relaxation and reading</td>
+          </tr>
+          <tr>
+            <td>10:30 PM</td>
+            <td>Sleep</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Fadi's Fitness Site - All rights reserved
+  </footer>
+</body>
+</html>

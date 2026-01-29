@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Goals</title> <!-- عنوان الصفحة -->
+    <link rel="stylesheet" href="اهداف اللياقه.CSS"/> <!-- ربط ملف CSS -->
+
+    <style>
+        body { background-color: #e9e7db; }
+    </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="الرئيسية الانجليزي.HTML">Home</a></li> <!-- رابط للصفحة الرئيسية -->
+        <li><a href="الطعام الصحي انجليزي.HTML">Healthy Food</a></li> <!-- رابط للطعام الصحي -->
+        <li><a href="برامج تمارين انجليزي.HTML">Workout Programs</a></li> <!-- رابط للتمارين -->
+        <li><a href="نصائح للياقه انجليزي.html">Fitness Tips</a></li> <!-- رابط للنصائح -->
+        <li><a href="التسجيل.HTML">Login</a></li> <!-- رابط لتسجيل الدخول -->
+        <li><a href="تواصل انجليزي.html">Contact</a></li> <!-- رابط للتواصل -->
+      </ul>
+    </nav>
+  </div>
+
+  <!-- زر تبديل اللغة -->
+  <div class="language-switcher">
+    <button onclick="window.location.href='اهداف اللياقه.HTML'">العربية</button>
+  </div>
+
+  <div class="Sizes">
+    <!-- قائمة منسدلة بها خيارات لتكبير وتصغير الصفحة -->
+    <label for="zoomSelect">Zoom Control:</label> <!-- تسميه للقائمة -->
+
+    <select id="zoomSelect" onchange="changeZoom(this.value)"> <!-- عند التغيير ينفذ دالة التكبير -->
+      <option value="100%">100% (Normal)</option> <!-- بخلي طبيعي الشاشة -->
+      <option value="80%">80%</option> <!-- يصغر بنسبة 80% -->
+      <option value="50%">50%</option> <!-- يصغر بنسبة 50% -->
+      <option value="120%">120%</option> <!-- يكبر بنسبة 120% -->
+      <option value="150%">150%</option> <!-- يكبر بنسبة 150% -->
+    </select>
+
+    <script>
+      function changeZoom(value) {
+        document.body.style.zoom = value;
+      }
+    </script>
+  </div>
+
+  <!-- قسم الصورة والنص -->
+  <section class="fitness-box">
+    <div class="image-side">
+      <img src='صور/33.jpg' alt="صورة لياقة">
+    </div>
+
+    <div class="text-side">
+      <h1>Fitness Goals</h1>
+      <p>
+        Setting goals is the key to staying motivated and achieving real results.
+        Whether it's weight loss or improving health, goals give you direction and clarity.
+      </p>
+      <a href="workout-programs.html" class="watch-link">Start Now ↗</a>
+    </div>
+  </section>
+
+  <!-- قسم: كيف يحدد اللاعب أهدافه -->
+  <section class="content">
+    <h1>How to Set Fitness Goals?</h1>
+    <p>
+      Goals should be specific, describing what changes will occur when achieved. The more specific and detailed, the higher the chance of success.
+      They should be positive—for example, aim to work out or read more rather than reduce TV time.
+      Make the goals tangible, like "talk to someone new every day" instead of a vague goal like "improve friendships."
+      Realistic goals are important—they should be achievable in a certain time frame, or challenging enough to identify obstacles and skills needed.
+      Setting a deadline also helps stay motivated and focused.
+    </p>
+  </section>
+
+  <!-- قسم: نصائح للالتزام بالروتين -->
+  <section class="content">
+    <h1>Tips for Staying Consistent with Exercise</h1>
+    <p>
+      Exercise is a healthy habit that supports many goals such as boosting circulation, reducing stress, and maintaining good levels of sugar and cholesterol.
+      However, many people struggle to keep up due to age, lifestyle, or other commitments.
+      Following a routine and building a habit slowly can help overcome these challenges.
+    </p>
+  </section>
+
+  <!-- تذييل الصفحة -->
+  <footer>
+    &copy; 2025 My Fitness Site - All rights reserved.
+  </footer>
+
+</body>
+</html>

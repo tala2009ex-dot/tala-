@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="برامج تمارين.CSS">
+    <style>
+        body { background-color: #e9e7db; }
+    </style>
+</head>
+
+<body>
+
+    <div class="Sizes">
+        <!-- قائمة منسدلة بها خيارات لتكبير وتصغير الصفحة -->
+        <label for="zoomSelect">Zoom Control:</label> <!--تسميه للقائمة-->
+
+        <select id="zoomSelect" onchange="changeZoom(this.value)"> <!--changeZoom لما تختار من القائمة ينفذ-->
+            <option value="100%">100% (Normal)</option> <!--بخلي طبيعي الشاشة-->
+            <option value="80%">80%</option> <!--بكبر ثمانين بالمية-->
+            <option value="50%">50%</option> <!--بكبر خمسين بالمية-->
+            <option value="120%">120%</option> <!--بكبر أكثر-->
+            <option value="150%">150%</option> <!--بكبر أكثر إشي-->
+        </select>
+
+        <script>
+            function changeZoom(value) {
+                document.body.style.zoom = value;
+            }
+        </script>
+    </div>
+
+    <div class="overlay">
+        <nav class="navbar">
+            <ul>
+                <li><a href="الرئيسية.HTML">Home</a></li>
+                <li><a href="الطعام الصحي.HTML">Healthy Food</a></li>
+                <li><a href="اهداف اللياقه.HTML">Fitness Goals</a></li>
+                <li><a href="نصائح للياقه.html">Fitness Tips</a></li>
+                <li><a href="التسجيل.HTML">Login</a></li>
+                <li><a href="تواصل.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="language-switcher">
+        <button onclick="window.location.href='برامج تمارين.html'">العربية</button>
+    </div>
+
+    <h1>Exercises</h1>
+
+    <img src="صور/1.jpg" alt="Exercise Image" class="main-image">
+
+    <section>
+        <h2>Strength Exercises</h2>
+        <p>Strength training is not only for increasing muscle mass, but also essential for enhancing overall health and improving quality of life at any age.</p>
+        <ul>
+            <li>
+                Push-up<br>
+                <video controls width="300">
+                    <source src="فيديوهات/الضغط.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                Squat<br>
+                <video controls width="300">
+                    <source src="فيديوهات/القرفصاء.mp4" type="video/mp4">
+                </video>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Flexibility Exercises</h2>
+        <p>Flexibility exercises improve the range of motion in your joints, reduce injury risk, and relieve muscle tension, enhancing physical performance and promoting relaxation.</p>
+        <ul>
+            <li>
+                Back Stretch<br>
+                <video controls width="300">
+                    <source src="فيديوهات/تمدد الضهر.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                Leg Stretch<br>
+                <video controls width="300">
+                    <source src="فيديوهات/تمرين الارجل.mp4" type="video/mp4">
+                </video>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cardio Exercises</h2>
+        <p>Cardio workouts improve heart health, boost fitness, and help burn fat, reducing the risk of chronic diseases and improving overall mood.</p>
+        <ul>
+            <li>
+                Running in Place<br>
+                <video controls width="300">
+                    <source src="فيديوهات/تمرين الارجل.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                Jump Rope<br>
+                <video controls width="300">
+                    <source src="فيديوهات/الحبل.mp4" type="video/mp4">
+                </video>
+            </li>
+        </ul>
+    </section>
+
+    <h2>For more advanced exercises, we recommend this site: <a href="https://musclewiki.com/?utm_source=chatgpt.com" target="_blank">Click Here</a></h2>
+
+    <h3>To get the best results, follow a healthy eating plan. You can explore our healthy food page below:</h3>
+    <iframe src="الطعام الصحي.HTML" width="600" height="400"></iframe>
+
+    <footer>
+        &copy; 2025 Fadi's Fitness Website - All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

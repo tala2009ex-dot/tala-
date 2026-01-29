@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="التسجيل.css" />
+
+
+
+</head>
+<body>
+
+  
+<div class="Sizes">
+  <label for="zoomSelect">Page Zoom Control:</label>
+
+  <select id="zoomSelect" onchange="changeZoom(this.value)">
+    <option value="100%">100% (Normal)</option>
+    <option value="80%">80%</option>
+    <option value="50%">50%</option>
+    <option value="120%">120%</option>
+    <option value="150%">150%</option>
+  </select>
+
+  <script> 
+    function changeZoom(value) {      
+      document.body.style.zoom = value;
+    }
+  </script>
+</div>
+
+  <div class="language-switcher">
+  <button onclick="window.location.href='التسجيل النسخه العربيه.html'">العربية</button>
+</div>
+  
+<DIV class="HOME">
+  
+  <a href="الرئيسية.HTML"_target="blank"> HOME </a>
+</DIV>
+
+  <div class="wrapper">
+    <form action="">
+
+      <h1>Login</h1>
+
+      <div class="input-box">
+        <input type="text" placeholder="Username" required /> 
+          </div>
+
+      <div class="input-box">
+        <input type="password" placeholder="Password" required />
+      </div>
+
+
+      <div class="remember-forgot">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+        
+      </div>
+       
+      <button type="submit" class="btn">Login</button>
+      
+     
+    </form>
+  </div>
+
+  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

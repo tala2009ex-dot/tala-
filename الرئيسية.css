@@ -1,0 +1,133 @@
+/* هاي بتشيل كل الهوامش والمسافاته */
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'poppins'; /* الخط المستخدم بكل الصفحه */
+}
+
+/* العنصر الي بجمع كل المحتوى الرئيسي وبيخليه بالنص */
+.container{
+    width: 100%;
+    height: 100vh; /* طول الصفحه كامل */
+    background-color: rgba(0, 0, 0, 0, 4); /* شفافية بالخلفيه (غلط كتابي هون لازم فاصله بدل الرقم الرابع) */
+    display: flex;
+    align-items: center; /* يخلي المحتوى بالنص عاموديا */
+    justify-content: center; /* يخليه بالنص افقيا */
+}
+
+/* تنسيق النص الي جوا */
+.content{
+  text-align: center; /* يخلي الكلام بالنص */
+}
+
+/* تنسيق العنوان الكبير */
+.content h1{
+  font-size: 95px; /* حجم كبير */
+  color: #ffffff; /* اللون ابيض */
+  margin-bottom: 50px; /* مسافه تحت العنوان */
+}
+
+/* تنسيق الروابط الي على شكل ازرار */
+.content a{
+   font-size: 23px;
+   color: #000000; /* لون النص ابيض */
+   text-decoration: none; /* يشيل خط تحت الرابط */
+   border: 2px solid   orange; /* حدود لونها برتقالي */
+   padding: 15px 25px; /* مسافه داخل الزر */
+   border-radius: 50px; /* يخلي الزر دائري */
+   transition: 0.3s; /* يخلي الحركه ناعمه */
+}
+
+/* لما تمر الفاره على الرابط */
+.content a:hover{
+  background-color: orange; /* الخلفيه تصير برتقالي */
+  color: rgb(255, 246, 246); /* النص يصير اسود */
+}
+
+/* تنسيق الفيديو الخلفيه */
+.background-clip{
+  position: absolute; /* يخلي الفيديو بالخلف */
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* يخلي الفيديو تحت كل العناصر */
+}
+
+
+footer {
+  background-color: #e7a413;
+  text-align: center;
+  padding: 1em;
+}
+
+.news-bar {
+  background-color: #ffd52f;
+  color: #000;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1em;
+  border-bottom: 2px solid #e6b800;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.news-bar marquee {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.about-box {
+  position: absolute;
+  top:700PX;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* شفاف */
+  color: white;
+  padding: 20px;
+  width: 299px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  z-index: 10;
+}
+
+.about-box h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+  .about-box P {
+  margin-top: 0;
+  font-size: 21px;
+}
+   
+  
+/* لمن الماوس يوقف فوق المربع */
+.about-box:hover {
+    transform: scale(1.05); /* بخلي الصندوق يكبر شوي */
+}
+
+
+.language-switcher {
+  text-align: center;
+  margin: 20px;
+}
+
+.language-switcher button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid orange;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.language-switcher button:hover {
+  background-color: orange;
+  color: white;
+}

@@ -1,0 +1,117 @@
+/* الخلفيه وصوره الصفحه الي ورا */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;   /* المحاذا من فوق لتحت */
+    min-height: 100vh;   /* بحدد اقل طول للشاشه */
+    background:url('صور/خبز.jpg') no-repeat; /* بخلي الصوره خلفيه وما تتكر */
+    background-size: cover; /* بخلي الصوره تغطي كل الخلفيه */
+    background-position: center; /* بخلي الصوره تكون بالنص */
+}
+  
+/* الشريط العليوي */
+.navbar ul { 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; /* بسمح للروابط تنزل تحت لو ضاق المساحه */
+    list-style: none; /* بشيل النقاط من القائمه */
+    padding: 20px 0; /* بحط مسافه فوق وتحت */
+    margin: 0;
+    gap: 15px; /* في فراغ بين العناصر */
+}
+  
+.navbar a {
+    font-size: 23px;
+    color: #ffffff;
+    text-decoration: none; /* بشيل الخط الي تحت الرابط */
+    border: 2px solid orange;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/* لمن الماوس يمر فوق الرابط */
+.navbar a:hover {
+    background-color: orange;
+    color: rgb(0, 0, 0);
+}
+
+/* العنوان الكبير */
+.main-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-header h1 {
+    font-family: 'Ballet', cursive;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.main-header p {
+    font-size: 20px;
+    color: white;
+    font-weight: normal; /* الوزن مش ثقيل */
+}
+
+/* الاقسام الي تحت */
+.section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+/* الصناديق الي بتعرض معلومات */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.orange-box {
+    background-color: #ff8c00;
+    padding: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    min-height: 180px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+      
+/* لمن الماوس يوقف فوق المربع */
+.orange-box:hover {
+    transform: scale(1.05); /* بخلي الصندوق يكبر شوي */
+}
+
+.language-switcher {
+  text-align: center;
+  margin: 20px;
+}
+
+.language-switcher button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid orange;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.language-switcher button:hover {
+  background-color: orange;
+  color: white;
+}

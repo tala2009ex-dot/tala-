@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Communicate with You</title>
+  <link rel="stylesheet" href="التسجيل.css" />
+</head>
+<body>
+
+  <div class="Sizes">
+    <!-- Dropdown list to control page zoom -->
+    <label for="zoomSelect">Page Zoom Control:</label>
+
+    <select id="zoomSelect" onchange="changeZoom(this.value)">
+      <option value="100%">100% (Normal)</option>
+      <option value="80%">80%</option>
+      <option value="50%">50%</option>
+      <option value="120%">120%</option>
+      <option value="150%">150%</option>
+    </select>
+
+    <script>
+      function changeZoom(value) {
+        document.body.style.zoom = value;
+      }
+    </script>
+  </div>
+
+  <div class="HOME">
+    <a href="الرئيسية.HTML" target="_blank">Home</a>
+  </div>
+
+  <div class="language-switcher">
+    <button onclick="window.location.href='تواصل.html'">العربية</button>
+  </div>
+
+  <div class="wrapper">
+    <form action="">
+      <h1>How would you like us to communicate with you?</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Your email" required />
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required />
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="links">
+      <a href="https://ar-ar.facebook.com/">Fadi's Snapchat</a> &emsp;
+      <a href="https://www.instagram.com/?hl=en">Fadi's Instagram</a> &emsp;
+      <a href="https://accounts.snapchat.com/accounts/v2/login">Fadi's Facebook</a> &emsp;
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background-color: #f9f9f9;
+}
+
+
+/* الشريط العليوي */
+.navbar ul { 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; /* بسمح للروابط تنزل تحت لو ضاق المساحه */
+    list-style: none; /* بشيل النقاط من القائمه */
+    padding: 20px 0; /* بحط مسافه فوق وتحت */
+    margin: 0;
+    gap: 15px; /* في فراغ بين العناصر */
+}
+  
+.navbar a {
+    font-size: 23px;
+    color: #000000;
+    text-decoration: none; /* بشيل الخط الي تحت الرابط */
+    border: 2px solid orange;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/* لمن الماوس يمر فوق الرابط */
+.navbar a:hover {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+}
+
+
+header {
+  background-color: #ffbb00;
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  text-align: center;
+}
+
+header p {
+  margin-top: 0.5em;
+  font-size: 2em;
+}
+
+
+main {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+footer {
+  background-color: #e7a413;
+  text-align: center;
+  padding: 1em;
+}
+
+/* جدول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 0.75em;
+  text-align: center;
+  background-color: #ebd2b1;
+}
+
+th {
+  background-color: #eca03b;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+ul{
+    font-size: 20px;
+}
+ 
+
+.language-switcher {
+  text-align: center;
+  margin: 20px;
+}
+
+.language-switcher button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid orange;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.language-switcher button:hover {
+  background-color: orange;
+  color: white;
+}

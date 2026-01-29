@@ -1,0 +1,106 @@
+body {
+    font-family: 'Dancing Script', sans-serif;
+    background-color: #e9e7db ;
+    margin: 20px;
+    direction: rtl; /* بحدد اتجاه النص من اليمين لليسار */
+    text-align: right; /* خلى الكلام كله عاليمين */
+}
+
+/* الشريط العليوي الي فوق الصفحه */
+.navbar ul { 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; /* لو كترت الروابط بلفن تحت */
+    list-style: none; /* بشل النقاط من القائمه */
+    padding: 20px 0; /* مسافه فوق وتحت */
+    margin: 0; 
+    gap: 15px; /* في فراغ بسيط بين الروابط */
+}
+  
+.navbar a {
+    font-size: 23px; /* الخط شوي كبير */
+    color: #000000; /* لون الكتابه اسود */
+    text-decoration: none; /* بشل الخط الي تحت الرابط */
+    border: 2px solid orange; /* حدود لونهه برتقاني */
+    padding: 15px 25px; /* مسافه جوى الرابط */
+    border-radius: 50px; /* تدوير الاطراف */
+    transition: 0.3s; /* يعطي حركه ناعمه */
+}
+
+/* لمن تمر الماوس عالرابط */
+.navbar a:hover {
+    background-color: orange; /* الخلفيه تصير برتقالي */
+    color: rgb(255, 255, 255); /* والكتابه تصير بيضه */
+}
+
+/* عنوان رئيسي ف الصفحه */
+h1 {
+    color: black;
+    font-family: 'Ballet', cursive; /* خط مزركش شوي */
+    font-size: 48px;
+    text-align: center; /* بنص الصفحه */
+}
+
+/* عنوان فرعي */                                    
+h2 {
+    color: black;
+    font-size: 32px;
+    margin-top: 40px; /* مسافه فوق */
+}
+
+/* صوره تكون رئيسيه ف الصفحه */
+.main-image {
+    display: block;
+    margin: 20px auto; /* بخليها بالنص */
+    width: 80%; /* ما تاخذ كل الشاشه */
+    max-width: 600px; /* ما تزيد عن 600 */
+    border-radius: 20px; /* حواف دائريه */
+}
+
+/* ترتيب النقاط */
+ul {
+    list-style-type: disc; /* نقاط عاديه */
+    margin-right: 40px; /* بعد عن الحافه */
+}
+
+/* كل نقطه او عنصر بالقائمه */
+li {
+    margin-bottom: 30px; /* مسافه بين كل عنصر */
+}
+
+/* عرض الفيديو */
+video {
+    display: block;
+    margin-top: 10px;
+}
+
+.iframe{
+    width: 100PX;
+}
+
+footer {
+  background-color: #e7a413;
+  text-align: center;
+  padding: 1em;
+}
+
+.language-switcher {
+  text-align: center;
+  margin: 20px;
+}
+
+.language-switcher button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid orange;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.language-switcher button:hover {
+  background-color: orange;
+  color: white;
+}

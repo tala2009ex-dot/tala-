@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthy Food</title>
+  <link rel="stylesheet" href="الطعام الصحي.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Zoom Control -->
+  <div class="Sizes">
+    <label for="zoomSelect">Zoom Control:</label>
+    <select id="zoomSelect" onchange="changeZoom(this.value)">
+      <option value="100%">100% (Normal)</option>
+      <option value="80%">80%</option>
+      <option value="50%">50%</option>
+      <option value="120%">120%</option>
+      <option value="150%">150%</option>
+    </select>
+  </div>
+
+  <script>
+    function changeZoom(value) {
+      document.body.style.zoom = value;
+    }
+  </script>
+
+  <div class="overlay">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="الرئيسية.HTML">Home</a></li>
+        <li><a href="اهداف اللياقه.HTML">Fitness Goals</a></li>
+        <li><a href="برامج تمارين.HTML">Workouts</a></li>
+        <li><a href="نصائح للياقه.html">Fitness Tips</a></li>
+        <li><a href="التسجيل.HTML">Login</a></li>
+        <li><a href="تواصل.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Language Switch -->
+    <div class="language-switcher">
+      <button onclick="window.location.href='الطعام الصحي.html'">العربية</button>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <h1>Healthy Food</h1>
+      <p>The Role of Nutrition in Fitness</p>
+    </header>
+
+    <!-- Muscle Gain Section -->
+    <section class="section">
+      <h2>Diet Plan for Muscle Gain</h2>
+      <div class="box-container">
+        <div class="orange-box">
+          <h3>Breakfast</h3>
+          <p>Includes eggs, whole grain bread, and Greek yogurt to support early muscle growth.</p>
+        </div>
+        <div class="orange-box">
+          <h3>Lunch</h3>
+          <p>Grilled chicken breast with brown rice and vegetables to provide protein and energy.</p>
+        </div>
+        <div class="orange-box">
+          <h3>Dinner</h3>
+          <p>Tuna with green salad and some nuts to help the body recover overnight.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weight Loss Section -->
+    <section class="section">
+      <h2>Diet Plan for Weight Loss</h2>
+      <div class="box-container">
+        <div class="orange-box">
+          <h3>Snack</h3>
+          <p>An apple or cucumber with a cup of green tea to reduce hunger without many calories.</p>
+        </div>
+        <div class="orange-box">
+          <h3>Healthy Lunch</h3>
+          <p>Grilled chicken breast or fish with a fiber-rich green salad.</p>
+        </div>
+        <div class="orange-box">
+          <h3>Light Dinner</h3>
+          <p>Vegetable soup or low-fat yogurt to ease digestion before sleep.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Healthy Recipes Section -->
+    <section class="section">
+      <h2>Healthy Recipes</h2>
+      <div class="box-container">
+        <div class="orange-box">
+          <h3>Quinoa Salad</h3>
+          <p>Cooked quinoa with fresh vegetables, olive oil, and lemon juice.</p>
+        </div>
+        <div class="orange-box">
+          <h3>Lentil Soup</h3>
+          <p>Lentils, carrots, onions, and warm spices – rich in protein and fiber.</p>
+        </div>
+        <div class="orange-box">
+          <h3>Energy Smoothie</h3>
+          <p>Banana, spinach, apple, and almond milk – a natural and healthy energy drink.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

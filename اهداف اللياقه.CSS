@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e9e7db;
+  color: #111;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2; /* لون خلفيه رمادي فاتح عشان ما يكون الوان قويه */
+  color: #111; /* لون النص اسود غامق */
+}
+
+/* الشريط العلوي */
+.navbar ul { 
+  display: flex; /* ترتيب الروابط بجانب بعض */
+  justify-content: center; /* توسيط الروابط افقيا */
+  flex-wrap: wrap; /* السماح بانتقال الروابط لسطر جديد اذا ضاقت المساحه */
+  list-style: none; /* ازالة النقطه من قوائم */
+  padding: 20px 0; /* تباعد فوق وتحت */
+  margin: 0; /* ازالة الهامش الخارجي */
+  gap: 15px; /* فراغ بين الروابط */
+}
+
+.navbar a{
+  font-size: 23px; /* حجم الخط للروابط */
+  color: #000000; /* لون الخط اسود */
+  text-decoration: none; /* ازالة خط تحت النص */
+  border: 2px solid orange; /* اطار برتقالي حول الرابط */
+  padding: 15px 25px; /* مسافه داخلية حول النص */
+  border-radius: 50px; /* حواف دائرية للعناصر */
+  transition: 0.3s; /* تحريك ناعم عند التغيير */
+}
+
+/* لما تمرر الموس على الرابط */
+.navbar a:hover{
+  background-color: orange; /* تغير الخلفيه للبرتقالي */
+  color: rgb(255, 255, 255); /* تغير لون الخط لابيض */
+}
+
+/* الصندوق الرئيسي */
+.fitness-box {
+  display: flex; /* ترتيب الصوره والنص بجانب بعض */
+  background: #d8b975; /* خلفيه بيضاء للصندوق */
+  max-width: 1000px; /* اعلى عرض للصندوق */
+  margin: 50px auto; /* تباعد علوي وسفلي وتوسيط افقي */
+  border-radius: 10px; /* حواف مستديرة */
+  overflow: hidden; /* اخفاء المحتوى الخارج */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* ظل خفيف */
+}
+
+/* جانب الصوره */
+.image-side img {
+  width: 100%; /* الصوره بتملي العنصر */
+  height: 100%; /* ارتفاع كامل */
+  object-fit: cover; /* تغطي الصوره بدون تشويه */
+  max-width: 450px; /* اعلى عرض للصوره */
+}
+
+/* جانب النص */
+.text-side {
+  padding: 40px; /* مسافه داخلية للنص */
+  flex: 1; /* ياخذ باقي المساحه */
+  display: flex;
+  flex-direction: column; /* ترتيب النص عموديا */
+  justify-content: center; /* توسيط عمودي */
+}
+
+.text-side h1 {
+  font-size: 32px; /* حجم العنوان */
+  font-weight: bold; /* خط غامق */
+  margin-bottom: 20px; /* فراغ تحت العنوان */
+}
+
+.text-side p {
+  font-size: 16px; /* حجم النص */
+  line-height: 1.7; /* مسافه بين الاسطر */
+  margin-bottom: 30px; /* فراغ تحت الفقرة */
+}
+
+/* الرابط تحت النص */
+.watch-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none; /* ازالة الخط تحت النص */
+  transition: all 0.3s; /* حركة ناعمه */
+}
+
+/* لما تمرر الموس على الرابط */
+.watch-link:hover {
+  color: #fa8601; /* لون ازرق */
+}
+
+/* قسم النصوص العامه */
+.content {
+  background: transparent; /* بدون خلفيه */
+  margin: 30px auto; /* تباعد وتوسيط */
+  max-width: 1000px; /* اقصى عرض */
+  padding: 0; /* بدون فراغ داخلي */
+  border-radius: 0; /* بدون زوايا مستديرة */
+  line-height: 1.8; /* مسافه بين الاسطر مريه */
+  box-shadow: none; /* بدون ظل */
+}
+
+.content h1 {
+  font-size: 28px; /* حجم العنوان */
+  color: #000; /* لون اسود */
+  margin-bottom: 20px; /* فراغ تحت العنوان */
+  font-weight: bold; /* خط غامق */
+}
+
+.content p {
+  font-size: 18px; /* حجم النص */
+  color: #000000; /* لون رمادي غامق */
+}
+
+
+footer {
+  background-color: #e7a413;
+  text-align: center;
+  padding: 1em;
+}
+
+.language-switcher {
+  text-align: center;
+  margin: 20px;
+}
+
+.language-switcher button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid orange;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.language-switcher button:hover {
+  background-color: orange;
+  color: white;
+}

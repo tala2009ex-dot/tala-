@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>تمارين</title>
+    <link rel="stylesheet" href="برامج تمارين.CSS">
+    <style>
+           body { background-color: #e9e7db ;}
+
+    </style>
+    
+    
+<div class="Sizes">
+ <!-- قائمة منسدلة بها خيارات لتكبير وتصغير الصفحة -->
+    <label for="zoomSelect">التحكم في تكبير الصفحة:</label><!--تسميه للثائمه-->
+
+
+<select id="zoomSelect" onchange="changeZoom(this.value)"><!--changeZoomلما تختار من القائمه  اينفذ ال-->
+  <option value="100%">100% (Normal)</option><!--بخلي طبيعي الشاشه-->
+  <option value="80%"> 80% </option><!--بكبر ثمنين بالميه-->
+  <option value="50%"> 50% </option><!--بكبر خمسين بالميه-->
+  <option value="120%">120% </option><!--بكبر اكثر-->   
+  <option value="150%">150% </option><!--بكبر اكثر اشي-->
+</select>
+
+<script> 
+  function changeZoom(value) {      
+    document.body.style.zoom = value;
+  } 
+</script>
+</div>
+
+</head>
+
+<body>
+  <div class="overlay">
+
+     <nav class="navbar">
+      <ul>
+        <li><a href="الرئيسية.HTML">الرئيسية</a></li>
+        <li><a href="الطعام الصحي.HTML">طعام صحي</a></li>
+        <li><a href="اهداف اللياقه.HTML"> اهداف اللياقة</a></li>
+        <li><a href="نصائح للياقه.html"> نصائح للياقه</a></li>
+        <li><a href="التسجيل.HTML"> تسجيل الدخول</a></li>
+
+         <li><a href="تواصل.html">للتواصل </a></li>
+
+      </ul>
+    </nav> 
+  </div>
+
+  <div class="language-switcher">
+  <button onclick="window.location.href='برامج تمارين انجليزي.html'">English</button>
+</div>
+
+
+    <h1>تمارين</h1>
+
+    <img src="صور/1.jpg" alt="صورة تمارين" class="main-image">
+
+    <section>
+        <h2>تمارين القوة: ليست فقط لزيادة الكتلة العضلية، بل تعد من اهم الانشطة الرياضية التي تعزز الصحة العامة وتحسن جودة الحياة في مختلف الاعمار</h2>
+        <ul>
+            <li>
+                تمرين الضغط<br>
+                <video controls width="300">
+                    <source src="فيديوهات/الضغط.mp4" type="video/mp4">
+                    تمرين الضغط
+                </video>
+            </li>
+            <li>
+                تمرين القرفصاء<br>
+                <video controls width="300">
+                    <source src="فيديوهات/القرفصاء.mp4" type="video/mp4">
+                تمرين القرفصاء 
+                </video>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>تمارين المرونة: تمارين المرونة تحسن مدى حركة المفاصل، وتقلل من خطر الإصابات، وتخفف من توتر العضلات، مما يعزز الاداء البدني ويساعد في الاسترخاء الجسدي والذهني.</h2>
+        <ul>
+            <li>
+                تمارين التمدد للظهر<br>
+                <video controls width="300">
+                    <source src="فيديوهات/تمدد الضهر.mp4" type=" video/mp4">
+                فيديو تمرين تمدد الظهر
+                </video>
+            </li>
+            <li>
+                تمرين تمدد الأرجل<br>
+                <video controls width="300">
+                    <source src="فيديوهات/تمرين الارجل.mp4" type="video/mp4">
+                فيديو تمرين تمدد الأرجل
+                </video>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>تمارين الكارديو:تمارين الكارديو تعزز صحة القلب، تحسن اللياقة البدنية، وتساعد في حرق الدهون، مما يقلل من خطر الاصابة بالامراض المزمنة ويحسن الحالة المزاجية العامة</h2>
+        <ul>
+            <li>
+                الجري في المكان<br>
+                <video controls width="300">
+                    <source src="فيديوهات/تمرين الجري.mp4.mp4" type="video/mp4">
+                فيديو تمرين الجري في المكان
+                </video>
+            </li>
+            <li>
+                نط الحبل<br>
+                <video controls width="300">
+                    <source src="فيديوهات/الحبل.mp4" type="video/mp4">
+                فيديو تمرين نط الحبل
+                </video>
+            </li>
+        </ul>
+    </section>
+    <h2>ومن اجل تمارين اوسع بكثيرانصح بهذا الموقع <a href="https://musclewiki.com/?utm_source=chatgpt.com" target="_blank">انقر هنا </a></h2>
+<h3>ان التمارين حتى تجدي نعها يجب ان يكون لك نظام طعام صحي --وهذه الصفحه تعرض نظام طعام صحي </h3>
+    <iframe src="الطعام الصحي.HTML" width="600" height="400"></iframe>
+
+    
+  <footer>
+    &copy; 2025 موقعي للياقه البدنية فادي - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
